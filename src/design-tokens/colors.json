@@ -1,7 +1,39 @@
 {
   "title": "Colors",
-  "description": "Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print.",
+  "description": "Color tokens for the design system",
   "items": [
+    {
+      "name": "Navy",
+      "value": "#2B3A67"
+    },
+    {
+      "name": "Yellow",
+      "value": "#FFD23F"
+    },
+    {
+      "name": "Cyan",
+      "value": "#4DD0E1"
+    },
+    {
+      "name": "Coral",
+      "value": "#FF7849"
+    },
+    {
+      "name": "Lime",
+      "value": "#9CCC65"
+    },
+    {
+      "name": "Purple",
+      "value": "#7B1FA2"
+    },
+    {
+      "name": "Lavender",
+      "value": "#E1BEE7"
+    },
+    {
+      "name": "Pink",
+      "value": "#FF69B4"
+    },
     {
       "name": "Dark",
       "value": "#030303"
@@ -11,8 +43,8 @@
       "value": "#ffffff"
     },
     {
-      "name": "Primary",
-      "value": "#02394A"
+      "name": "Wheat",
+      "value": "#F5E6D3"
     }
   ]
 }

@@ -1,22 +1,82 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/css/global.css" />
-  </head>
-  <body>
-    <article class="wrapper flow">
-      <h1>CUBE CSS core setup</h1>
-      <div class="switcher">
-        <h2 class="text-primary">A heading and paragraph in two columns</h2>
-        <p>
-          Donec sed odio dui. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet
-          rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum
-          faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl
-          consectetur et.
-        </p>
-      </div>
-    </article>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.173.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.173.0/examples/jsm/"
+        }
+    }
+    </script>
+    <style>
+        figure {
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main class="design-system">
+        <div class="card framework" id="fastest">
+            <figure id="eye-container"></figure>
+        </div>
+
+        <div class="card voice-tone">
+            <h2>Voice & Tone</h2>
+            <div class="quotes">
+                <span>"</span>
+                <span>"</span>
+            </div>
+        </div>
+
+        <div class="card logo">
+            <h2>Logo</h2>
+            <div class="dropbox-icon">
+                <svg viewBox="0 0 40 40" fill="currentColor">
+                    <path d="M10 10 L20 2 L30 10 L20 18 Z M10 22 L20 14 L30 22 L20 30 Z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="card typography">
+            <h2>Typography</h2>
+            <span>Aa</span>
+        </div>
+
+        <div class="card iconography">
+            <h2>Iconography</h2>
+            <div class="lock-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 1a5 5 0 0 1 5 5v3H7V6a5 5 0 0 1 5-5zM3 11h18v12H3V11z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="card color">
+            <figure id="space-container"></figure>
+        </div>
+
+        <div class="card imagery">
+            <h2>Imagery</h2>
+            <div class="image-placeholder"></div>
+        </div>
+
+        <div class="card motion">
+            <h2>Motion</h2>
+            <div class="motion-curve">
+                <svg viewBox="0 0 100 40">
+                    <path d="M10 30 C 30 30, 70 10, 90 10" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="10" cy="30" r="3" fill="currentColor"/>
+                    <circle cx="90" cy="10" r="3" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="/js/main.js"></script>
+</body>
 </html>

@@ -34,3 +34,31 @@ to change how empty grid tracks are handled */
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 33%, 20rem);
 }
+
+.design-system {
+  height: calc(100vh - 16px);
+  display: grid;
+  gap: var(--space, 0.5rem);
+  grid-template-areas: 
+    "framework voice     logo    type"
+    "framework color     logo    motion"
+    "icon      color     imagery imagery";
+  padding: var(--space);
+}
+
+@media (max-width: 1200px) {
+  .design-system {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 
+      "framework"
+      "voice"
+      "logo"
+      "type"
+      "icon"
+      "color"
+      "imagery"
+      "motion";
+    height: auto;
+  }
+}

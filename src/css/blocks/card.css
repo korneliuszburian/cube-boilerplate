@@ -1,0 +1,69 @@
+.card {
+    position: relative;
+    padding: 1.5rem;
+    overflow: hidden;
+    transition: border-radius 0.3s ease;
+  }
+  
+  .card:hover {
+    border-radius: 16px;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .model-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .model-container {
+    opacity: 1;
+  }
+  
+  /* Card colors */
+  .framework { grid-area: framework; background: var(--color-navy); color: white; }
+  .voice-tone { grid-area: voice; background: var(--color-yellow); }
+  .logo { grid-area: logo; background: var(--color-cyan); }
+  .typography { grid-area: type; background: var(--color-coral); }
+  .iconography { grid-area: icon; background: var(--color-lime); }
+  .color { grid-area: color; background: var(--color-coral); }
+  .imagery { grid-area: imagery; background: var(--color-purple); color: white; }
+  .motion { grid-area: motion; background: var(--color-lavender); }
+  
+  /* Component styles */
+  .quotes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 4rem;
+    padding: 1rem;
+  }
+  
+  .dropbox-icon {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background: #0061FF;
+    padding: 8px;
+  }
+  
+  .image-placeholder {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 100px;
+    height: 100px;
+    background: var(--color-pink);
+  }
